@@ -1,8 +1,10 @@
 // @ts-check
 const { devices } = require('@playwright/test');
+const { permission } = require('node:process');
 
 const config = {
   testDir: './tests',
+  retries : 1,
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
   expect: {
@@ -20,9 +22,12 @@ const config = {
 
     browserName : 'chromium',
     headless : false,
-    viewport : {width: 720, height: 720},
+   // viewport : {width: 720, height: 720},
     screenshot : 'on',
+    video:'on',
     trace : 'on',//off,on
+    ignorehttpserrors : true,
+    ...devices['android OnePlus 9 Pro']
     },
   },
   {
@@ -30,9 +35,11 @@ const config = {
 use: {
 
   browserName : 'webkit',
-  headless : false,
+  headless : true,
   screenshot : 'on',
   trace : 'on',//off,on
+  ignorehttpserrors : true,
+  permissions : ['geolocation'],
   ...devices['iPhone 11']
   },
 }

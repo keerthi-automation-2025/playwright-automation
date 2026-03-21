@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-        "test": "npx playwright test tests/demo.spec.js --headed"
+    "regression": "npx playwright test",
+    "WebTest": "npx playwright test --grep @Web",
+    "APItest": "npx playwright test --grep @API",
+    "generateReport": "allure generate allure-results --clean -o allure-report",
+    "openReport": "allure open allure-report",
+    "safariNewConfig": "npx playwright test tests/UIAutomation.spec.js --config=playwright1.config.js --project=chrome"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +17,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.3"
+    "@types/node": "^25.3.3",
+    "allure-playwright": "^3.6.0"
   }
 }

@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","29780","Banner IS visible when 6 events are returned","","2026-03-21","passed","2026-03-21","","AssignmentUdemy1.spec.js","",""
+"","7890","Banner is NOT visible when 4 events are returned","","2026-03-21","passed","2026-03-21","","AssignmentUdemy1.spec.js","",""
+"","7834","Client App login","","2026-03-21","passed","2026-03-21","","UIAutomation.spec.js","",""
+"","10244","@Web Client App login ZARA COAT 3","","2026-03-21","passed","2026-03-21","","UIAutomation.spec.js","",""
+"","10794","@Web Client App login ADIDAS ORIGINAL","","2026-03-21","passed","2026-03-21","","UIAutomation.spec.js","",""
+"","5404","Booking access should be denied for different user","","2026-03-21","failed","2026-03-21","","AssignmentUdemy2.spec.js","",""
